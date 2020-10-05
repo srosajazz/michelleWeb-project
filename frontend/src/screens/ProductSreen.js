@@ -26,41 +26,41 @@ const ProductScreen = ({ match }) => {
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
-            <ListGroup.Item>
+            <ListGroupItem>
               <h3>{product.name}</h3>
-            </ListGroup.Item>
-            <ListGroup.Item>
+            </ListGroupItem>
+            <ListGroupItem>
               <Rating
                 value={product.rating}
                 text={`${product.numReviews} reviews`}
               />
-            </ListGroup.Item>
+            </ListGroupItem>
             {/* price */}
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-            <ListGroup.Item>Description: {product.description}</ListGroup.Item>
+            <ListGroupItem>Price: ${product.price}</ListGroupItem>
+            <ListGroupItem>Description: {product.description}</ListGroupItem>
           </ListGroup>
         </Col>
         <Col md={3}>
           <Card>
             {/* price */}
-            <ListGroup.Item>
+            <ListGroupItem>
               <Row>
                 <Col>Price:</Col>
                 <Col>
                   <strong>${product.price}</strong>
                 </Col>
               </Row>
-            </ListGroup.Item>
+            </ListGroupItem>
             {/* status */}
-            <ListGroup.Item>
+            <ListGroupItem>
               <Row>
                 <Col>Status:</Col>
                 <Col>
                   {product.countInStock > 0 ? "In Stock" : "Out Of Stock"}
                 </Col>
               </Row>
-            </ListGroup.Item>
-            <ListGroup.Item>
+            </ListGroupItem>
+            <ListGroupItem>
               <Button
                 className="btn-block"
                 type="button"
@@ -68,7 +68,7 @@ const ProductScreen = ({ match }) => {
               >
                 Add to Cart
               </Button>
-            </ListGroup.Item>
+            </ListGroupItem>
           </Card>
         </Col>
       </Row>
